@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App Name</title>
+    <!-- <link rel="stylesheet" href="App.css"> -->
+    <style>
+     body{
+          color: white;
+          background-color: #1F1F1E;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+     }
+     fieldset{
+          /* padding: 50px; */
+     }
+     .left{
+          flex-wrap: wrap;
+     }
+     input{
+         width: 500px;
+         height: 30px;
+         border-radius: 10px;
+         margin-top: 10px;
+         background-color: #5F6368;
+     }
+     label{
+          font-size: larger;
+     }
+     .App{
+          display: inline;
+     }
+     button{
+          padding: 10px;
+          margin-top: 10px;
+          background-color: #282A2D;
+          color: white;
+          border-radius: 10px;
+     }
+    
+
+
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+     
+        <!-- <fieldset> -->
+        <form action="/predict" method="post">
+            <div class="column">
+               <label for="radius_mean">Radius_mean:</label><br>
+                <input type="text" name="radius_mean" placeholder="5.5"><br>
+                <label for="texture_mean">Texture_mean:</label><br>
+                <input type="text" name="texture_mean" placeholder="5.5"><br>
+                <label for="perimeter_mean">Perimeter_mean:</label><br>
+                <input type="text" name="perimeter_mean"><br>
+                <label for="area_mean">Area_mean:</label><br>
+                <input type="text" name="area_mean"><br>
+                <label for="smoothness_mean">Smoothness_mean:</label><br>
+                <input type="text" name="smoothness_mean"><br>
+                <label for="compactness_mean">Compactness_mean:</label><br>
+                <input type="text" name="compactness_mean"><br>
+                <label for="concavity_mean">Concavity_mean:</label><br>
+                <input type="text" name="concavity_mean"><br>
+                <label for="concave_points_mean">Concave_points_mean:</label><br>
+                <input type="text" name="concave_points_mean"><br>
+                <label for="symmetry_mean">Symmetry_mean:</label><br>
+                <input type="text" name="symmetry_mean"><br>
+                <label for="fractal_dimension_mean">Fractal_dimension_mean:</label><br>
+                <input type="text" name="fractal_dimension_mean"><br>
+               </div>
+                <div class="column">
+                <label for="radius_se">Radius_se:</label><br>
+                <input type="text" name="radius_se"><br>
+                <label for="texture_se">Texture_se:</label><br>
+                <input type="text" name="texture_se"><br>
+                <label for="perimeter_se">Perimeter_se:</label><br>
+                <input type="text" name="perimeter_se"><br>
+                <label for="area_se">Area_se:</label><br>
+                <input type="text" name="area_se"><br>
+                <label for="smoothness_se">Smoothness_se:</label><br>
+                <input type="text" name="smoothness_se"><br>
+                <label for="compactness_se">Compactness_se:</label><br>
+                <input type="text" name="compactness_se"><br>
+                <label for="concavity_se">Concavity_se:</label><br>
+                <input type="text" name="concavity_se"><br>
+                <label for="concave_points_se">Concave_points_se:</label><br>
+                <input type="text" name="concave_points_se"><br>
+                <label for="symmetry_se">Symmetry_se:</label><br>
+                <input type="text" name="symmetry_se"><br>
+                <label for="fractal_dimension_se">Fractal_dimension_se:</label><br>
+                <input type="text" name="fractal_dimension_se"><br>
+               </div>
+                <div class="column">
+                <label for="radius_worst">Radius_worst:</label><br>
+                <input type="text" name="radius_worst"><br>
+                <label for="texture_worst">Texture_worst:</label><br>
+                <input type="text" name="texture_worst"><br>
+                <label for="perimeter_worst">Perimeter_worst:</label><br>
+                <input type="text" name="perimeter_worst"><br>
+                <label for="area_worst">Area_worst:</label><br>
+                <input type="text" name="area_worst"><br>
+                <label for="smoothness_worst">Smoothness_worst:</label><br>
+                <input type="text" name="smoothness_worst"><br>
+                <label for="compactness_worst">Compactness_worst:</label><br>
+                <input type="text" name="compactness_worst"><br>
+                <label for="concavity_worst">Concavity_worst:</label><br>
+                <input type="text" name="concavity_worst"><br>
+                <label for="concave_points_worst">Concave_points_worst:</label><br>
+                <input type="text" name="concave_points_worst"><br>
+                <label for="symmetry_worst">Symmetry_worst:</label><br>
+                <input type="text" name="symmetry_worst"><br>
+                <label for="fractal_dimension_worst">Fractal_dimension_worst:</label><br>
+                <input type="text" name="fractal_dimension_worst"><br>
+               </div>
+            <button type="submit">Submit</button>
+        </form>
+     <!-- </fieldset> -->
+
+        <fieldset style="padding: 50px; margin: 10px; border-radius: 10px; width: 500px; align-items: center; justify-content: center; text-align: center;margin-left: 25%;">
+            <h1 style="align-items: center;justify-content: center;text-align: center;">Result is:{{result}}</h1>
+        </fieldset>
+
+    </div>
+</body>
+
+</html>
+ 

@@ -1,0 +1,16 @@
+# Logs directory
+logs/
+
+# Python egg files
+*.egg
+
+# Constants directory
+constants/
+
+build/
+cenv/
+dist/
+
+
+demo.py
+
